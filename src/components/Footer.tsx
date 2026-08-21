@@ -19,26 +19,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.3fr] gap-8 lg:gap-11 pb-11 border-b border-white/12">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <svg
-              width="150"
-              height="34"
-              viewBox="0 0 300 68"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mb-4 filter brightness-0 invert"
-              aria-hidden="true"
-            >
-              <text x="0" y="42" fontFamily="Manrope, sans-serif" fontWeight="800" fontSize="40" fill="#ffffff">
-                ECO
-              </text>
-              <circle cx="152" cy="26" r="18" fill="none" stroke="#ffffff" strokeWidth="3" />
-              <path
-                d="M152 14c5 4 5 10 5 12 0 6-5 10-5 10s-5-4-5-10c0-2 0-8 5-12z"
-                fill="#ffffff"
-              />
-              <text x="178" y="42" fontFamily="Manrope, sans-serif" fontWeight="800" fontSize="40" fill="#ffffff">
-                PRIME
-              </text>
-            </svg>
+            <img
+              src="/images/logo-white.png"
+              alt="ECOPRIME Business Solution Ltd"
+              className="mb-4 h-[34px] w-auto"
+            />
             <p className="text-[13px] max-w-[280px] text-white/50">
               ECOPRIME Business Solution Ltd provides strategic, technological, process
               and organizational solutions across business strategy, gas, real estate,

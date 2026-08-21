@@ -49,19 +49,11 @@ export default function Header() {
       <div className="max-w-[1220px] mx-auto px-5 sm:px-7 flex items-center justify-between">
         {/* Brand */}
         <a href="#home" aria-label="ECOPRIME — Go to top" className="flex items-center gap-2.5">
-          <svg width="150" height="34" viewBox="0 0 300 68" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <text x="0" y="42" fontFamily="Manrope, sans-serif" fontWeight="800" fontSize="40" fill="#8DC63F">ECO</text>
-            <circle cx="152" cy="26" r="18" fill="none" stroke="#8DC63F" strokeWidth="3" />
-            <path d="M152 14c5 4 5 10 5 12 0 6-5 10-5 10s-5-4-5-10c0-2 0-8 5-12z" fill="#8DC63F" />
-            <text
-              x="178" y="42"
-              fontFamily="Manrope, sans-serif" fontWeight="800" fontSize="40"
-              fill={scrolled ? '#0B2545' : '#ffffff'}
-              className="transition-all duration-300"
-            >
-              PRIME
-            </text>
-          </svg>
+          <img
+            src={scrolled ? '/images/logo.png' : '/images/logo-white.png'}
+            alt="ECOPRIME Business Solution Ltd"
+            className="h-[34px] w-auto"
+          />
         </a>
 
         {/* Desktop nav */}
