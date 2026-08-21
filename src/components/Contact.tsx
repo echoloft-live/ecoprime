@@ -197,7 +197,7 @@ export default function Contact() {
 
             {submitted ? (
               <div className="w-full mt-4 py-4 text-center bg-lime/10 border border-lime/30 rounded-lg text-lime-deep font-bold">
-                Enquiry Sent ✓ — We&apos;ll be in touch soon.
+                Enquiry Sent ✓. We&apos;ll be in touch soon.
               </div>
             ) : (
               <button type="submit" className="btn btn-navy w-full mt-4 py-4">

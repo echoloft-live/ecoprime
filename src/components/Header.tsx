@@ -48,7 +48,7 @@ export default function Header() {
     >
       <div className="max-w-[1220px] mx-auto px-5 sm:px-7 flex items-center justify-between">
         {/* Brand */}
-        <a href="#home" aria-label="ECOPRIME — Go to top" className="flex items-center gap-2.5">
+        <a href="#home" aria-label="ECOPRIME. Go to top" className="flex items-center gap-2.5">
           <img
             src={scrolled ? '/images/logo.png' : '/images/logo-white.png'}
             alt="ECOPRIME Business Solution Ltd"

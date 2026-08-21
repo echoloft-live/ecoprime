@@ -3,7 +3,7 @@ const clients = [
   'Federal Capital Territory Administration (FCTA)',
   'Sublime Oil and Gas',
   'Zeaxel Oil and Gas',
-  'CIIN — Chuxter Investment Int\'l Nigeria Ltd.',
+  'CIIN (Chuxter Investment Int\'l Nigeria Ltd.)',
   'Arutoms Integrated Service Nig. Ltd.',
   'UPDC',
 ];
