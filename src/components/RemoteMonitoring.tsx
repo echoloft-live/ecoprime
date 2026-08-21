@@ -13,7 +13,7 @@ const monitorProducts = [
       'Fits nearly all tanks, any size',
       'Easy on-site installation',
       'Long life battery',
-      'Zone 0 – ATEX approved',
+      'Zone 0, ATEX approved',
     ],
   },
   {
@@ -28,7 +28,7 @@ const monitorProducts = [
       'Fits nearly all tanks, any size',
       'Easy on-site installation',
       'Long life battery',
-      'Zone 0 – ATEX approved',
+      'Zone 0, ATEX approved',
     ],
   },
 ];

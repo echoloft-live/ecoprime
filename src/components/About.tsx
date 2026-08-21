@@ -46,9 +46,9 @@ export default function About() {
             ECOPRIME Business Solution Ltd is a business solution provider operating across
             business strategy, technology, process improvement, organizational development,
             business solutions, gas, real estate, remote monitoring, and training and
-            development. Our core competences are structured around four connected areas —
-            Strategy, Technology, Process, and Organization — so we can approach complex
-            business challenges from every angle.
+            development. Our core competences are structured around four connected areas:
+            Strategy, Technology, Process, and Organization. This allows us to approach
+            complex business challenges from every angle.
           </p>
         </div>
 

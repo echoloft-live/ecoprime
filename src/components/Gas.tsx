@@ -47,7 +47,7 @@ export default function Gas() {
           <div className="rounded-2xl overflow-hidden aspect-[4/5] lg:aspect-[4/5] shadow-soft relative">
             <img
               src="/images/gas.jpg"
-              alt="ECOPRIME gas value chain — LPG storage tanks and cylinders at a gas facility"
+              alt="ECOPRIME gas value chain, LPG storage tanks and cylinders at a gas facility"
               className="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
             />

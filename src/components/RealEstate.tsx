@@ -14,7 +14,7 @@ export default function RealEstate() {
         <div className="rounded-[18px] overflow-hidden aspect-[4/5] shadow-soft order-last lg:order-first relative">
           <img
             src="/images/real-estate.jpg"
-            alt="ECOPRIME real estate — modern residential development under construction"
+            alt="ECOPRIME real estate, modern residential development under construction"
             className="absolute inset-0 w-full h-full object-cover"
             loading="lazy"
           />
