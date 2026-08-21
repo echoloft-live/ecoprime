@@ -10,33 +10,22 @@ export default function RealEstate() {
   return (
     <section id="realestate" className="relative py-[110px]">
       <div className="max-w-[1220px] mx-auto px-5 sm:px-7 grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-[56px] items-center">
-        {/* Image placeholder */}
-        <div className="rounded-[18px] overflow-hidden aspect-[4/5] shadow-soft order-last lg:order-first">
+        {/* Image */}
+        <div className="rounded-[18px] overflow-hidden aspect-[4/5] shadow-soft order-last lg:order-first relative">
+          <img
+            src="/images/real-estate.jpg"
+            alt="ECOPRIME real estate — modern residential development under construction"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
+          />
           <div
-            className="w-full h-full flex items-center justify-center relative overflow-hidden"
+            className="absolute inset-0 pointer-events-none"
             style={{
-              background: 'linear-gradient(150deg, var(--color-blue-mid), var(--color-blue-deep))',
+              background:
+                'linear-gradient(to top, rgba(11,37,69,0.45), transparent 45%)',
             }}
-          >
-            <div
-              className="absolute inset-0 opacity-15 pointer-events-none"
-              style={{
-                backgroundImage:
-                  'repeating-linear-gradient(115deg, rgba(255,255,255,0.5) 0 1.5px, transparent 1.5px 22px)',
-              }}
-              aria-hidden="true"
-            />
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#8DC63F"
-              strokeWidth={1.2}
-              className="w-[70px] h-[70px] relative z-10"
-            >
-              <path d="M3 21V10l9-7 9 7v11" />
-              <path d="M9 21v-6h6v6" />
-            </svg>
-          </div>
+            aria-hidden="true"
+          />
         </div>
 
         {/* Content */}

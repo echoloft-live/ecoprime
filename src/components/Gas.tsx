@@ -43,35 +43,22 @@ export default function Gas() {
 
         {/* Gas grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-[56px] items-start reveal">
-          {/* Image placeholder */}
-          <div
-            className="rounded-2xl overflow-hidden aspect-[4/5] lg:aspect-[4/5] shadow-soft"
-          >
+          {/* Image */}
+          <div className="rounded-2xl overflow-hidden aspect-[4/5] lg:aspect-[4/5] shadow-soft relative">
+            <img
+              src="/images/gas.jpg"
+              alt="ECOPRIME gas value chain — LPG storage tanks and cylinders at a gas facility"
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
+            />
             <div
-              className="w-full h-full flex items-center justify-center relative overflow-hidden"
+              className="absolute inset-0 pointer-events-none"
               style={{
-                background: 'linear-gradient(150deg, var(--color-blue-deep), var(--color-blue-mid))',
+                background:
+                  'linear-gradient(to top, rgba(11,37,69,0.45), transparent 45%)',
               }}
-            >
-              <div
-                className="absolute inset-0 opacity-15 pointer-events-none"
-                style={{
-                  backgroundImage:
-                    'repeating-linear-gradient(115deg, rgba(255,255,255,0.5) 0 1.5px, transparent 1.5px 22px)',
-                }}
-                aria-hidden="true"
-              />
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#8DC63F"
-                strokeWidth={1.2}
-                className="w-[70px] h-[70px] relative z-10"
-              >
-                <path d="M6 3h8l4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
-                <path d="M9 21v-6h4v6" />
-              </svg>
-            </div>
+              aria-hidden="true"
+            />
           </div>
 
           {/* Content */}

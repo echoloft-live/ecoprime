@@ -6,30 +6,35 @@ const specialties = [
     description: 'Business plans, feasibility studies and financial models.',
     href: '#services',
     Icon: FolderIcon,
+    image: '/images/business-solutions.jpg',
   },
   {
     title: 'Gas',
     description: 'Gas value chain, plant development and reticulation.',
     href: '#gas',
     Icon: GasIcon,
+    image: '/images/gas.jpg',
   },
   {
     title: 'Real Estate',
     description: 'Concept development through to construction finance.',
     href: '#realestate',
     Icon: BuildingIcon,
+    image: '/images/real-estate.jpg',
   },
   {
     title: 'Remote Monitoring',
     description: 'Wireless telemetry for tanks and fuel operations.',
     href: '#remote',
     Icon: MonitorIcon,
+    image: '/images/remote-monitoring.jpg',
   },
   {
     title: 'Training & Development',
     description: 'Capacity building across four core sectors.',
     href: '#training',
     Icon: TrainingIcon,
+    image: '/images/training.jpg',
   },
 ];
 
@@ -49,33 +54,33 @@ export default function ProjectSpecialties() {
 
         {/* Specialty cards grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5.5 reveal">
-          {specialties.map(({ title, description, href, Icon }) => (
+          {specialties.map(({ title, description, href, Icon, image }) => (
             <a
               key={title}
               href={href}
               className="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-tight cursor-pointer"
             >
-              {/* Background tile */}
-              <div
-                className="relative w-full h-full flex flex-col items-center justify-center text-white"
-                style={{
-                  background: 'linear-gradient(150deg, var(--color-blue-deep), var(--color-blue-mid))',
-                }}
-              >
-                {/* Stripe pattern */}
-                <div
-                  className="absolute inset-0 opacity-15 pointer-events-none"
-                  style={{
-                    backgroundImage:
-                      'repeating-linear-gradient(115deg, rgba(255,255,255,0.5) 0 1.5px, transparent 1.5px 22px)',
-                  }}
-                  aria-hidden="true"
-                />
+              {/* Background photo */}
+              <img
+                src={image}
+                alt={title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
 
-                {/* Icon */}
-                <div className="relative z-10 w-[46px] h-[46px] rounded-xl bg-lime flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-[23px] h-[23px] text-blue-deep" />
-                </div>
+              {/* Navy scrim for contrast */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    'linear-gradient(180deg, rgba(11,37,69,0.35) 0%, rgba(11,37,69,0.15) 40%, rgba(11,37,69,0.65) 100%)',
+                }}
+                aria-hidden="true"
+              />
+
+              {/* Icon */}
+              <div className="absolute top-6 left-6 z-10 w-[46px] h-[46px] rounded-xl bg-lime flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <Icon className="w-[23px] h-[23px] text-blue-deep" />
               </div>
 
               {/* Overlay */}
